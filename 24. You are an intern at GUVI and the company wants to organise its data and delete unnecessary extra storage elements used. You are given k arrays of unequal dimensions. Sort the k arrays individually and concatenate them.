@@ -1,0 +1,23 @@
+You are an intern at GUVI and the company wants to organise its data and delete unnecessary extra storage elements used. You are given k arrays of unequal dimensions. Sort the k arrays individually and concatenate them.
+ Sample Input :
+3
+2
+98 12
+6
+1 2 3 8 5 9
+1
+11
+Sample Output :
+12 98 1 2 3 5 8 9 11
+
+
+
+
+n = int(input())
+total = []
+for i in range(n):
+    a = int(input())
+    b = list(map(int,input().split()))
+    b.sort()
+    total += b
+print(*total)
