@@ -1,0 +1,19 @@
+You are provided with an array in which all elements are repeated thrice except one which is repeated twice.Your task is to print that number.
+Sample Input :
+5
+13 12 13 12 13
+Sample Output :
+12
+
+
+
+a = input()
+arr = list(map(int,input().split()))
+c = []
+for i in arr:
+    if arr.count(i) == 2:
+        if i not in c:
+            
+            c.append(i)
+if len(c) >= 1:
+    print(*c)
