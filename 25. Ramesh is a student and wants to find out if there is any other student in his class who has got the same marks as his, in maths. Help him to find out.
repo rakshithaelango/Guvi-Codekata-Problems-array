@@ -1,0 +1,23 @@
+Ramesh is a student and wants to find out if there is any other student in his class who has got the same marks as his, in maths. Help him to find out.
+Sample Input :
+2 10
+1 2
+Sample Output :
+-1
+
+
+
+
+n,mark = input().split()
+n = int(n)
+mark = int(mark)
+m = list(map(int,input().split()))
+answer = None
+for i in m:
+    if i == mark:
+        answer = m.index(i)
+        break
+    else:
+        answer = "-1"
+
+print(answer)
