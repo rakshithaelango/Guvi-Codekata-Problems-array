@@ -1,0 +1,17 @@
+Given 2 numbers N,K followed by a sorted array of N elements, search and tell if an element K is present in the array.print 'yes' if element is presentINPUT
+3 2
+2 3 7
+OUTPUT
+Yes
+
+
+
+
+n,m = input().split(" ")
+n = int(n)
+m = int(m)
+a = list(map(int,input().split()))
+if m in a:
+    print('yes')
+else:
+    print('no')
